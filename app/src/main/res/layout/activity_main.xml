@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example1.cpu_x.MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.007"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_cpu_icon"
+                android:text="Device Info"
+                android:fontFamily="@font/pbold"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_12sdp"
+
+                android:src="@drawable/refresh"
+                 />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top|center"
+            android:layout_weight="0.1"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="6dp"
+                app:tabPaddingStart="6dp"
+                app:tabRippleColor="@color/transparent"
+                android:textAlignment="center"
+               />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/cardview_alternative">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ProgressBar
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:id="@+id/progress_bar_main"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/ad_banner_lay"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/cardview_alternative" >
+
+    <!-- Add more key-value pairs as needed -->
+
+    <LinearLayout
+        android:id="@+id/device_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-50dp"
+        android:paddingLeft="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/keyTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"/>
+
+        <TextView
+            android:id="@+id/valueTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"/>
+
+        <!-- Add more key-value pairs as needed -->
+
+    </LinearLayout>
+
+</LinearLayout>

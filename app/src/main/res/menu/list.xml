@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cpu"
+        android:icon="@drawable/cpu"
+        android:title="CPU"
+        android:checked="true"
+
+        android:color="@color/white" />
+
+    <item
+        android:id="@+id/device"
+        android:icon="@drawable/device"
+        android:color="@color/white"
+        android:title="DEVICE" />
+
+    <item
+        android:id="@+id/system"
+        android:icon="@drawable/system"
+        android:title="SYSTEM"
+        android:color="@color/white" />
+
+    <item
+        android:id="@+id/battery"
+        android:icon="@drawable/battery"
+        android:title="BATTERY"
+        android:color="@color/white" />
+
+    <item
+        android:id="@+id/sensor"
+        android:icon="@drawable/sensors"
+        android:title="SENSOR"
+        android:color="@color/white" />
+
+    <item
+        android:id="@+id/internet"
+        android:icon="@drawable/speedometer"
+        android:title="INTERNET"
+        android:color="@color/white" />
+</menu>
